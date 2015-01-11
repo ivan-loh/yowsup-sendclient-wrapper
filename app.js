@@ -45,8 +45,8 @@ function beat() {
 
 function digest(err, content) {
 
-  if (err)     { console.error(err);            }
-  if (content) { content = JSON.parse(content); }
+  if (err)     { console.error(err);               }
+  if (content) { content = JSON.parse(content[1]); }
 
   if (content.to && content.message) {
     console.log(content);
