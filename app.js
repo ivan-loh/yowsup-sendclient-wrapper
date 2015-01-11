@@ -36,7 +36,7 @@ var yowsup = (function () {
 
 
 var DELAY = config.delay || 1000,
-    QUEUE = config.redis.key,
+    QUEUE = config.redis.queue,
     app   = new EventEmitter();
 
 function beat() {
