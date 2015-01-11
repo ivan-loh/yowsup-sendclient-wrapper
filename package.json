@@ -1,0 +1,23 @@
+{
+  "name": "sendclient-wrap",
+  "version": "1.0.0",
+  "description": "too lazy to use python",
+  "main": "app.js",
+  "dependencies": {
+    "redis": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivan-loh/node-yowsup-sendclient-demo-wrapper.git"
+  },
+  "author": "Ivan Loh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivan-loh/node-yowsup-sendclient-demo-wrapper/issues"
+  },
+  "homepage": "https://github.com/ivan-loh/node-yowsup-sendclient-demo-wrapper"
+}
