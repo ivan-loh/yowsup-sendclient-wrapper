@@ -1,5 +1,6 @@
 ## yowsup sendclient demo wrapper
 cause i'm too lazy to do it in python.
+Runs as sort of a service, and accepts commands on a redis queue.
 
 
 #### 1. Install redis-server & nodejs
@@ -30,3 +31,9 @@ sudo python setup.py install
 https://play.google.com/store/apps/details?id=com.smorra.passwordextractor
 
 the login name in config should be your phone number with the country code and the password should be a base64 encoded string obtained from the app above.
+
+#### 4. install this.
+```
+npm install
+node app.js
+```
