@@ -28,6 +28,8 @@ sudo python setup.py install
 
 #### 3. grab whatsapp password from your android phone
 
+you'll need to have a rooted android phone with whatsapp installed
+
 https://play.google.com/store/apps/details?id=com.smorra.passwordextractor
 
 the login name in config should be your phone number with the country code and the password should be a base64 encoded string obtained from the app above.
