@@ -17,7 +17,7 @@ var yowsup = (function () {
                                                config.yowsup.password + " -s ";
 
         return function (to, message) {
-          return command + to + " " + message;
+          return command + to + " \"" + message + "\"";
         };
       }());
 
