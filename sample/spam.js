@@ -1,11 +1,11 @@
-var config = require('./config/config'),
+var config = require('../config/config'),
     async  = require('async'),
     yowsup = (function () {
 
                 var sys  = require('sys'),
                     exec = require('child_process').exec,
                     cmd  = (function () {
-                      var command = "yowsup-cli demos -l " + config.yowsup.login + ":" +
+                      var command = "yowsup-cli demos -l " + config.yowsup.login    + ":" +
                                                              config.yowsup.password + " -s ";
 
                       return function (to, message) {
@@ -27,13 +27,15 @@ var config = require('./config/config'),
 
 
 
-var count = 0;
+var count = 0,
+    LIMIT = 100;
+
 async.whilst(
-  function check() { return count < 10; },
+  function check() { return count < LIMIT; },
   function exec(done) {
 
     yowsup("put some poor soul's number here", " Hi! " + Date.now(), function (){
-      console.log(arguments);
+      count = count + 1;
       done();
     });
 
